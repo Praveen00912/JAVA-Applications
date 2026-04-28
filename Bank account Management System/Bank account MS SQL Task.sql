@@ -10,7 +10,7 @@ account_id int Primary key,
 customer_id int unique,
 balance decimal(10,2) check(balance>=0),
 account_type varchar(30), 
-foreign key (customer_id) references customer(customer_id)
+foreign key (customer_id) references customer(customer_id) 
 );
 
 insert into customer(customer_id,name,city)
